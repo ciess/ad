@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to CSM15W!</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+	<style>
+		body, html
+		{
+			height:100%;
+			margin:0;
+			background: rgb(245,218,185);
+			background: linear-gradient(176deg, rgba(245,218,185,1) 13%, rgba(255,228,225,1) 100%);
+			font-family: 'Source Code Pro', monospace;
+		}
+		.monitor
+		{
+			margin:auto;
+			width:75%;
+		}
+		.screen
+		{
+			display:flex;
+			margin:20px auto 0px auto;
+			border:20px solid;
+			border-radius:10px;
+			background-color:mintcream;
+			height:500px;
+			padding:10px;
+			overflow:hidden;
+		}
+		.stand1
+		{
+			margin:auto;
+			background-color:black;
+			width:15%;
+			height:20px;
+		}
+		.stand2
+		{
+			margin:auto;
+			width:20%;
+			background-color:black;
+			height:20px;
+		}
+		.navbar
+		{
+			display:flex;
+			box-sizing:border-box;
+			width:100%;
+			height:10%;
+			padding:5px;
+			background-color:#40464d;
+		}
+		.menu
+		{
+			width:75%;
+		}
+		.menubtn
+		{
+			width:10px;
+			height:10px;
+			border-radius:100%;
+			background-color: red;
+			margin-right:10px;
+		}
+		#red
+		{
+			background-color:red;
+		}
+		#yellow
+		{
+			background-color:khaki;
+		}
+		#green
+		{
+			background-color:lime;
+		}
+		.exit
+		{
+			display:flex;
+			justify-content:flex-end;
+			width:25%;
+		}
+		.text-editor
+		{
+			color:#ffffff;
+			background-color:#2f3740;
+			width:100%;
+			height:50%;
+			animation-name:scale;
+			animation-duration:1s;
+		}
+		.text-editor:hover
+		{
+			transition-duration:1s;
+			transform:scale(1.1);
+		}
+		@keyframes scale
+		{
+			from
+			{
+				transform:scale(0);
+			}
+			to
+			{
+				transform:scale(1);
+			}
+		}
+		.text-editor .bodytext
+		{
+			padding:10px;
+		}
+		.text-editor span
+		{
+			color:#f25042;
+		}
+		.info
+		{
+			background-color:#faeee7;
+			height:350px;
+			margin:25px;
+			animation-name:slide;
+			animation-duration:1s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes slide
+		{
+			from
+			{
+				transform:translateY(-50%);
+			}
+			to
+			{
+				transform:translateY(10%);
+			}
+		}
+		iframe
+		{
+			width:400px;
+			height:100%;
+			border:0px;
+		}
+		.leftside
+		{
+			display:flex;
+			flex-direction:column;
+			padding:10px;
+		}
+		.concepts
+		{
+			font-family: 'Rubik', sans-serif;
+			margin-top:20px;
+			width:100%;
+		}
+		.concepts img
+		{
+			width:25px;
+			height:25px;
+		}
+		table, tr, td
+		{
+			width:100%;
+			margin:auto;
+			border-collapse:collapse;
+			border:2px solid;
+		}
+		td
+		{
+			padding:10px;
+		}
+		tr
+		{
+			animation-duration:5s;
+			animation-timing-function: ease-in;
+			animation-iteration-count: infinite;
+
+		}
+		tr:nth-child(1)
+		{
+			animation-name:row1;
+		}
+		tr:nth-child(2)
+		{
+			animation-name:row2;
+			animation-delay:2s;
+		}
+		tr:nth-child(3)
+		{
+			animation-name:row3;
+			animation-delay:3s;
+		}
+		tr:nth-child(4)
+		{
+			animation-name:row4;
+			animation-delay:4s;
+		}
+		@keyframes row1
+		{
+			20%
+			{
+				background-color:#c3f0ca;
+			}
+			100%
+			{
+				background-color:#c3f0ca;
+			}
+		}
+		@keyframes row2
+		{
+			15%
+			{
+				background-color:#c3f0ca;
+			}
+			100%
+			{
+				background-color:#c3f0ca;
+			}
+		}
+		@keyframes row3
+		{
+			15%
+			{
+				background-color:#c3f0ca;
+			}
+			100%
+			{
+				background-color:#c3f0ca;
+			}
+		}
+		@keyframes row4
+		{
+			10%
+			{
+				background-color:#c3f0ca;
+			}
+			100%
+			{
+				background-color:#c3f0ca;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class = "monitor">
+<div class = screen>
+	<div class = "leftside">
+	<div class = "text-editor">
+		<div class = "navbar">
+			<div class ="menu">File Edit View</div>
+			<div class = "exit">
+				<div class = "menubtn" id = red></div>
+				<div class = "menubtn" id = yellow></div>
+				<div class = "menubtn" id = green></div>
+			</div>
+		</div>
+		<div class ="bodytext">
+		<code>
+			<span><b>&lt;h1&gt;</b></span>Welcome to CSM15W!<span><b>&lt;/h1&gt;</b></span>
+			<br>
+			<span><b>&lt;h2&gt;</b></span>Client-Side Web Development Using HTML/Javascript<span><b>&lt;/h2&gt;</b></span>
+			<br><br>
+			<span><b>&lt;p&gt;</b></span>
+			<br>Learn HTML/CSS and Javascript to develop static and dynamic webpages!<br>
+			Create unique websites and start a career as a front-end web developer today!<br>
+			<span><b>&lt;/p&gt;</b></span>
+		</code>
+		</div>
+	</div>
+	<div class = "concepts">
+		<table>
+			<caption>WHAT WILL I LEARN?</caption>
+			<tr>
+				<td>Advanced CSS concepts</td>
+				<td><img src="misc/checkbox.png"></td>
+			</tr>
+			<tr>
+				<td>Javascript</td>
+				<td><img src="misc/checkbox.png"></td>
+			</tr>
+			<tr>
+				<td>Bootstrap</td>
+				<td><img src="misc/checkbox.png"></td>
+			</tr>
+			<tr>
+				<td>Much more!</td>
+				<td><img src="misc/checkbox.png"></td>
+			</tr>
+		</table>
+		
+	</div>
+</div>
+	<div class = "info">
+		<iframe name = "content" src = "misc/info.html"></iframe>
+	</div>
+
+</div>
+<div class = stand1></div>
+<div class = stand2></div>
+
+</div>
+</body>
+</html>
